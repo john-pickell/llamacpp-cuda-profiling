@@ -67,3 +67,12 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Models — multi-GB, never commit
+*.gguf
+*.bin
+*.safetensors
+
+# Profiler output
+*.nsys-rep
+*.ncu-rep
