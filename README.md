@@ -39,8 +39,8 @@ the responsible kernels*, and *explain the gap*.
 
 | Config | Prefill (t/s) | Decode (t/s) | Decode % of bandwidth ceiling |
 |--------|---------------|--------------|-------------------------------|
-| Q4_K_M, full offload | 1511.5 | 109.3 | _TBD_ |
-| Q5_K_M | _TBD_ | _TBD_ | _TBD_ |
+| Q4_K_M, full offload | _TBD_ | _TBD_ | _TBD_ |
+| Q5_K_M | 1511.5 | 109.3 | _TBD_ |
 | Q8_0   | _TBD_ | _TBD_ | _TBD_ |
 
 *Headline chart and per-kernel profiling results land here as the analysis
