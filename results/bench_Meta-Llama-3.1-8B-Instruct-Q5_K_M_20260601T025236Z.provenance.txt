@@ -1,0 +1,5 @@
+model_file:   /home/omegaape/models/Meta-Llama-3.1-8B-Instruct-Q5_K_M.gguf
+model_size:   5.4G
+model_sha256: 14e10feba0c82a55da198dcd69d137206ad22d116a809926d27fa5f2398c69c7
+config:       pp=512 tg=128 ngl=99 reps=10 fa=0 lock_clock=0
+timestamp:    20260601T025236Z

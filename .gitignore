@@ -1,78 +1,43 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
-
-# Models — multi-GB, never commit
+# --- Models (multi-GB, NEVER commit) ---
 *.gguf
 *.bin
 *.safetensors
 
-# Profiler output
+# --- Profiler output (large; keep summaries in the writeup, not raw captures) ---
+# These live under results/ next to CSVs but are ignored by extension.
 *.nsys-rep
 *.ncu-rep
+*.qdrep
+*.sqlite
+results/nsys_*
+results/ncu_*
+
+# --- C/C++ build artifacts ---
+build/
+*.o
+*.obj
+*.so
+*.a
+
+# --- Python (charting / analysis) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# --- Local scratch ---
+*.tmp
+*.log
+
+# --- Tracked deliverables (explicitly NOT ignored) ---
+# results/*.csv                  benchmark data
+# results/*.provenance.txt       per-run model fingerprint + config
+# env.md                         machine/build environment
+# These are committed evidence. Do not add ignore rules that catch them.
